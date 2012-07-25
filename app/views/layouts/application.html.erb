@@ -5,8 +5,8 @@
   <!-- START_HIGHLIGHT -->
   <title>Pragprog Books Online Store</title>
   <!-- END_HIGHLIGHT -->
-  <%= stylesheet_link_tag "application" %><!-- <label id="code.slt"/> -->
-  <%= javascript_include_tag "application" %><!-- <label id="code.jlt"/> -->
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tag %><!-- <label id="code.csrf"/> -->
 </head>
 <!-- END:head -->
@@ -14,12 +14,19 @@
 <!-- START_HIGHLIGHT -->
 <div id="banner">
   <%= image_tag("logo.png") %>
-  <%= @page_title || "Pragmatic Bookshelf" %><!-- <label id="code.depot.e.title"/> -->
+  <%= @page_title || "Pragmatic Bookshelf" %>
 </div>
 <div id="columns">
   <div id="side">
+    <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+        <table>
+          <%= render @cart %>
+        </table>
+  <% end %>
+
+    </div>
     <ul>
-      <li><a href="http://www....">Home</a></li>
+      <li><a href="/">Home</a></li>
       <li><a href="http://www..../faq">Questions</a></li>
       <li><a href="http://www..../news">News</a></li>
       <li><a href="http://www..../contact">Contact</a></li>

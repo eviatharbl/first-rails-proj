@@ -1,21 +1,12 @@
-<h1>Listing carts</h1>
-
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @carts.each do |cart| %>
-  <tr>
-    <td><%= link_to 'Show', cart %></td>
-    <td><%= link_to 'Edit', edit_cart_path(cart) %></td>
-    <td><%= link_to 'Destroy', cart, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+<% if notice %>
+    <p id="notice"><%= notice %></p>
 <% end %>
-</table>
 
-<br />
-
-<%= link_to 'New Cart', new_cart_path %>
+<h2>Your Pragmatic Cart</h2>
+<ul>
+  <% @cart.line_items.each do |item| %>
+      <!-- START_HIGHLIGHT -->
+      <li><%= item.quantity %> &times; <%= item.product.title %></li>
+      <!-- END_HIGHLIGHT -->
+  <% end %>
+</ul>

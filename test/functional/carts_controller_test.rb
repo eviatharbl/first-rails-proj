@@ -44,7 +44,7 @@ class CartsControllerTest < ActionController::TestCase
 
   test "should update cart" do
     put :update, id: @cart, cart: @cart.attributes
-    assert_redirected_to cart_path(assigns(:cart))
+    assert_redirected_to store_index_path
   end
 
   test "should destroy cart" do
@@ -53,6 +53,6 @@ class CartsControllerTest < ActionController::TestCase
       delete :destroy, id: @cart
     end
 
-    assert_redirected_to store_path
+    assert_redirected_to store_index_path
   end
 end

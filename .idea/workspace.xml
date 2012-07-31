@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18000289-e1aa-406a-8184-2d367cd5fda5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/first-rails-proj.iml" afterPath="$PROJECT_DIR$/.idea/first-rails-proj.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/orders_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/orders_controller.rb" />
     </list>
     <ignored path="first-rails-proj.iws" />
@@ -26,7 +24,7 @@
       <file leaf-file-name="orders_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/orders_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="43" selection-start="291" selection-end="291" vertical-scroll-proportion="0.16">
+            <state line="8" column="40" selection-start="288" selection-end="288" vertical-scroll-proportion="0.16">
               <folding />
             </state>
           </provider>
@@ -636,7 +634,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/orders_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="43" selection-start="291" selection-end="291" vertical-scroll-proportion="0.16">
+        <state line="8" column="40" selection-start="288" selection-end="288" vertical-scroll-proportion="0.16">
           <folding />
         </state>
       </provider>

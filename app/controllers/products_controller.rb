@@ -4,6 +4,8 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
 
+	puts 'iii'
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }

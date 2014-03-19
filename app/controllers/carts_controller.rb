@@ -79,6 +79,7 @@ class CartsController < ApplicationController
       else
         format.html { render action: "edit" }
         format.json { render json: @cart.errors, status: :unprocessable_entity }
+        # new line
       end
     end
   end
